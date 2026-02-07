@@ -1,0 +1,14 @@
+# raw.jaffle_shop.customers ->
+# asume que es la misma db que en el profile
+sources: 
+  - name: jaffle_shop # se dientifica como tu esquema, puedes poner alias
+    database: raw 
+    schema: jaffle_shop
+    tables: 
+      - name: customers
+      - name: orders
+  - name: payment    
+    database: raw  
+    schema: stripe
+    tables: 
+      - name: payment
